@@ -1,0 +1,18 @@
+packs:
+  packname_example:
+    money: 10.0         #Optional
+    items:
+    - stone_bricks/20   #ItemName/Quantity
+    - planks/5/2        #ItemName/Quantity/SubId
+    commands:
+    - "say Say_Command_Example!"
+    tellraws:
+      @a: "Tellraw for @a !"
+      player: "Tellraw for player who bought the pack!"
+    
+    
+messages:
+  reload: "§2Configuration reloaded!"
+  nopermission: "§4You can't do that!"
+  noexist: "§4This pack doesn't exist!"
+  arguments: "§4Please put minimum 2 arguments in the command !"

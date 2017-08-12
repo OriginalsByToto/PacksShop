@@ -1,0 +1,31 @@
+name: PacksShop
+main: com.originalsbytoto.bukkit.packsshop.MainClass
+version: 1.1.0
+author: OriginalsByToto
+
+commands:
+  packsshop:
+    usage: /packsshop <pack> <player> [args] ...
+    description: Plugin command
+    permission : packsshop.use
+    aliases: [ps, pack]
+  packsreload:
+    usage: /packsreload
+    description: Reloads the plugin configuration
+    permission : packsshop.reload
+    aliases: [psr, preload]
+    
+    
+permissions:
+  packsshop.*:
+    description: Gives access to all the plugin permissions. OP has this permission by default.
+    children:
+      packsshop.reload: true
+      packsshop.use: true
+    default: op
+  packsshop.reload:
+    description: Gives access to reload the plugin configuration
+    default: op
+  packsshop.use:
+    description: Gives access to use or give a pack
+    default: op
